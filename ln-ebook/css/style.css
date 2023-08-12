@@ -1,0 +1,1234 @@
+/*********
+font-family: 'Abhaya Libre', serif;
+font-family: 'Roboto', sans-serif;
+*****/
+
+/*Paleta de color y tipografia*/
+
+:root {
+    --color-primario: #658f3d;
+    --color-secundario: #b46327;
+    --color-claro1: #EDDBCD;
+    --color-claro2: #CDCDCD;
+    --color-oscuro1: #000000;
+    --color-oscuro2: #383735;
+    --tipo-primario: 'Abhaya Libre', serif;
+    --tipo-secundario: 'Roboto', sans-serif;
+}
+
+/*GLOBALES*/
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+#botonArriba {
+    color: var(--color-primario);
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    font-size: 30px;
+    transform: scale(0);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.contenedor {
+    max-width: 1000px;
+    margin: 0 auto;
+    max-width: 95%;
+}
+
+.mt-s {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-style: 1.7rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+
+  
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: .03rem;
+    line-height: 3.8rem;
+    color: grey;
+    font-family: var(--tipo-secundario);
+    
+}
+
+.corazon-icono {
+    color: #b46327;
+}
+
+.pilares .corazon-icono {
+    color: var(--color-primario);
+}
+
+li {
+    font-size: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.btn {
+    padding: 15px;
+    border: 1px #b46327 solid;
+    border-radius: 5px;
+}
+
+.img-sombra {
+    box-shadow: 5px 5px 15px 4px rgba(128, 128, 128, 0.267);
+}
+
+.barra-superior-redes {
+
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-barra-superior-redes a i {
+    font-size: 3rem;
+    color: #b46327;
+    margin-left: 10px;
+}
+
+.header-home {
+    background-image: url(/img/nancy-header-index-min.png);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    border-width: 0px;
+    position: relative;
+}
+
+.header-home::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.3;
+}
+
+/***header servicios**/
+
+.header-servicios {
+    background-image: url(/img/header-jardin-de-lilith.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    border-width: 0px;
+    position: relative;
+}
+
+.header-servicios::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.4;
+}
+
+/**header acerca de**/
+
+.header-acercade-danzamedicina{
+    background-image: url(/img/danzamedicinaHeadergrande.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    border-width: 0px;
+    position: relative;
+}
+
+.header-acercade-danzamedicina::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.logo {
+    width: 80px;
+}
+
+.boton-hamburguesa {
+    background-color: transparent;
+    color: var(--color-primario);
+    border: none;
+    font-size: 25px;
+}
+
+.titulos {
+    position: relative;
+}
+
+.titulo-principal {
+    color: white;
+    padding-top: 150px;
+    font-family: var(--tipo-primario);
+}
+
+.titulo-principal-home {
+    color: white;
+    padding-top: 150px;
+    font-family: var(--tipo-primario);
+}
+
+.barra-nav {
+    background-color: #658f3d23;
+    position: relative;
+}
+
+.barra-nav-servicios {
+    background-color: #1e201c6c;
+    position: relative;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+/***Lista movil****/
+
+.ham {
+    font-size: 2.5rem;
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/**listanavegacion**/
+
+.lista-navegacion {
+    background-color: var(--color-primario);
+    width: 100%;
+    position: absolute;
+    height: 0px;
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+.crece .menu {
+    height: 100vh;
+    opacity: 1;
+}
+
+.lista-navegacion li {
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.lista-navegacion li a {
+    text-decoration: none;
+    color: white;
+}
+
+.lista-navegacion ul {
+    padding-left: 0px;
+}
+
+/***FIN lista movil****/
+
+.titulo-principal-home {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: titulo-principal;
+    animation-name: titulo-principal;
+    padding-top: 150px;
+}
+
+@-webkit-keyframes titulo-principal {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes titulo-principal {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/*****respira*****/
+
+.respira {
+    text-align: center;
+    font-family: var(--tipo-secundario);
+}
+
+.separador-icono1 {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+.separador-icono1.danzaT {
+    width: 130px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+.separador-icono2 {
+    width: 80px;
+    display: block;
+    margin: 0 auto;
+}
+.respira-titulo {
+    padding-top: 20px;
+    color: var(--color-primario);
+    font-family: var(--tipo-primario);
+}
+
+.separador {
+    margin: 50px;
+}
+
+/**En ti***/
+
+.img-enti {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.enti-habita p {
+    font-family: var(--tipo-secundario);
+    font-weight: 300;
+
+}
+
+.enti-habita strong {
+    color: var(--color-secundario);
+}
+
+.enti {
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.enti-contenido .como-acceder {
+    color: var(--color-primario);
+}
+
+.enti-contenido ul li {
+    font-size: 2rem;
+    color: grey;
+}
+
+.enti-contenido ul li {
+    list-style: none;
+}
+
+/**Bienvenida**/
+
+.seccion-bienvenida {
+    background-color: rgba(0, 128, 0, 0.061);
+    position: relative;
+    padding: 50px 0px 50px 10px;
+}
+
+.bienvenida-parrafos {
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+
+
+
+/* blog */
+
+.respira h2 {
+    text-align: center;
+
+}
+
+.blog h2 {
+    color: var(--color-primario);
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.pilares h2 {
+    text-align: center;
+    color: var(--color-primario);
+}
+
+.pilares .lista-ul-pagina {
+    letter-spacing: .03rem;
+    line-height: 3.8rem;
+    color: grey;
+    font-family: var(--tipo-secundario);
+    font-weight: 300;
+}
+.pilares div ul li .corazon-icono{
+    color: var(--color-secundario);
+}
+.blog p{
+    letter-spacing: .03rem;
+    line-height: 3.8rem;
+    color: grey;
+    font-family: var(--tipo-secundario);
+    font-weight: 300;
+}
+
+
+/**MI HISTORIA***/
+
+.mi-historia h2 {
+    padding-top: 50px;
+    color: var(--color-secundario);
+    font-family: var(--tipo-primario);
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+.mi-historia-boton {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.danzamedicina-video {
+
+    margin-top: 30px;
+    width: 95%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.danzamedicina-video::after {
+    content: "";
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.frame-de-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    position: 0;
+    top: 0;
+    left: 0;
+
+}
+.img-sesion{
+    margin-top: 50px;
+}
+.titulo-como-trabajaremos{
+    color: var(--color-primario);
+    padding: 20px;
+}
+/**SERVICIOS***/
+
+.seccion-servicios-pagina-lista {
+    margin-top: 30px;
+}
+.seccion-servicios-pagina-lista div .enfoque {
+font-weight: bold;
+}
+.boton-agenda-tu-cita {
+    text-align: center;
+    padding: 15px;
+    border: 1px #658f3d;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    background-color: #658f3d;
+    color: white;
+    -webkit-box-shadow: 3px 3px 20px 0px #66636283;
+    -moz-box-shadow: 3px 3px 20px 0px #66636283;
+    box-shadow: 3px 3px 20px 0px #66636283;
+}
+
+.titulo-servicios {
+    color: var(--color-primario);
+    font-family: var(--tipo-primario);
+    font-size: 4rem;
+}
+
+.servicios-contenido {
+    text-align: center;
+}
+
+.servicios-contenido p {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+.servicios-contenido p span {
+    font-size: 1.5rem;
+}
+.subtitulo-servicios {
+    text-align: center;
+    color: grey;
+    font-family: var(--tipo-secundario);
+    font-size: 2rem;
+}
+
+.servicos-icono {
+    width: 150px;
+}
+
+.contenedor-servicios {
+    padding: 150px 20px;
+
+}
+
+.contenedor-servicios h1 {
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.servicios p {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.titulares-servicios {
+    color: var(--color-primario);
+    font-size: 3rem;
+}
+
+.servicios-boton {
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.video-servicios {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.video-container {
+    display: flex;
+}
+.cuerpo-templo{
+    margin-top: 50px;
+    text-align: center;
+}
+.cuerpo-templo h3 {
+    font-size: 2.5rem;
+}
+
+.contenedor-lilith-pagina {
+    text-align: center;
+    
+  
+}
+.contenedor-lilith-pagina p {
+text-align: center;
+}
+.contenedor-lilith-pagina .cita-lilith {
+    color: var(--color-primario);
+    background-color: rgba(0, 128, 0, 0.061);
+    padding: 20px;
+}
+
+.cita-lilith-para-unirte{
+   color: white; 
+    background-color: var(--color-secundario);
+    padding: 20px;
+}
+.lilith-pagina-icono {
+    text-align: center;
+    max-width: 300px;
+
+}
+.final-lilith .texto-final p {
+font-size: 1.6rem;
+}
+
+.final-lilith p .icono-corazon{
+    color:var(--color-secundario);
+    font-size: 2rem;
+}
+
+.final-lilith .texto-final p .icono-corazon{
+    color:var(--color-primario);
+    font-size: 2rem;
+}
+
+/**pagina Contacto**/
+
+/* inicio */
+.header-acercade-contacto {
+    background-image: url(/img/contacto-header-min.png);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    border-width: 0px;
+    position: relative;
+}
+
+.header-acercade-contacto::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.contacto-grid-parrafo{
+    margin-top: -23px;
+    
+}
+
+
+
+
+/* fin */
+.contacto-grid-inicio{
+    letter-spacing: .03rem;
+    line-height: 3.8rem;
+    color: grey;
+    font-family: var(--tipo-secundario);
+    font-weight: 300;
+}
+.contacto-grid-inicio p  span{
+    color: var(--color-primario);
+}
+.cantacto-formulario  .contacto-grid-inicio div h2{
+    color: var(--color-primario);
+
+
+}
+.servicio-iconocontacto .servicos-icono {
+    display: block;
+    margin: 0 auto;
+}
+
+.contacto-main {
+    background-color: white;
+    padding: 10px;
+}
+
+.contenedor-servicios {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contacto-main h2 {
+    text-align: center;
+}
+
+.contacto-main .contactame-subtitulo {
+    text-align: center;
+}
+
+.contenedor-botones-contacto {
+    margin-bottom: 0px;
+    padding-bottom: 30px;
+}
+
+.boton-contacto-correo {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px #49974fb2;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    background-color: grey;
+    color: white;
+    -webkit-box-shadow: 3px 3px 20px 0px grey;
+    -moz-box-shadow: 3px 3px 20px 0px grey;
+    box-shadow: 3px 3px 20px 0px rgba(128, 128, 128, 0.466);
+}
+
+.boton-contacto-whatsapp {
+    text-align: center;
+    padding: 15px;
+    border: 1px #49974fb2;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    background-color: green;
+    color: white;
+    -webkit-box-shadow: 3px 3px 20px 0px #49974f7a;
+    -moz-box-shadow: 3px 3px 20px 0px #49974f7a;
+    box-shadow: 3px 3px 20px 0px #5d92627a;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.servicios-contacto {
+    padding-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 5px;
+    height: 50px;
+    font-size: 2rem;
+}
+
+#submit {
+    color: var(--color-secundario);
+}
+
+form textarea {
+    margin: 5px;
+    font-size: 2rem;
+}
+
+.footer {
+    background-color: var(--color-oscuro2);
+}
+
+.contenido-footer {
+    padding: 20px 5px;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.contenido-footer div {
+    margin: 10px;
+}
+
+.iconos-redes {
+    color: white;
+    font-size: 2rem;
+}
+
+.iconos-redes:hover {
+    color: var(--color-secundario);
+}
+
+/* testimonios */
+
+.testimonios {
+    background-color: rgb(230, 224, 224);
+    padding: 50px 0px;
+}
+
+
+
+.testimonio-card {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.imagen-testimonios img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.imagen-testimonios h3 {
+    font-size: 2.3rem;
+}
+
+.texto-testimonio p {
+    color: rgb(93, 93, 93);
+    font-size: 2rem;
+    text-align: left;
+}
+
+.texto-testimonio p::first-letter {
+    font-size: 4rem;
+}
+
+.contacto-grid h2 {
+    color: var(--color-primario);
+    font-weight: 300;
+}
+
+/* PAGINAS */
+.main-site-acerca-de h3 {
+    color: var(--color-primario);
+    font-size: 3rem;
+}
+
+.main-site-acerca-de .cursiva span{
+    font-style: italic;
+    
+   
+
+
+}
+.main-site-acerca-de .cintilladanzamedicina.aqui{
+    background-color: #b46427b6;
+    color: white;
+}
+.servicos-pagina-icono {
+    width: 200px;
+}
+
+.contenedor-servicios-pagina {
+    text-align: center;
+}
+
+.seccion-servicios-pagina-lista {
+    
+    padding: 20px;
+}
+.seccion-servicios-pagina-lista div  ul .icono-corazon{
+    color: var(--color-primario);
+}
+.lista-ul-pagina li {
+    list-style: none;
+    color: grey;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+
+.cuerpo-templo {
+    background-color: var(--color-primario);
+}
+
+.cuerpo-templo h3 {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.division {
+    border: 0;
+    width: 80%;
+    height: 3px;
+    margin-top: 80px;
+    background-color: #658f3d5e;
+}
+
+.acompanamiento {
+    margin-top: 100px;
+}
+
+.tu-primera-cita {
+    margin-top: 80px;
+}
+
+.tu-primera-cita h2 {
+    color: var(--color-primario);
+}
+
+.seccion-servicios-pagina-lista.es-para-mi {
+    background-color: rgba(11, 128, 0, 0.192);
+}
+
+.contenido-contacto h2 {
+    color: var(--color-primario);
+}
+
+.contenido-contacto {
+    text-align: center;
+}
+
+.tecomparto {
+    margin-top: 50px;
+}
+
+/**FIN de  SERVICIOS***/
+
+/*EXITO pagina*/
+.pagina-exito {
+    height: 100vh;
+}
+
+.pagina-exito {
+    text-align: center;
+    padding-top: 150px;
+    color: var(--color-primario);
+
+}
+
+.pagina-exito a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-primario);
+}
+
+.exito-icono {
+    font-size: 3rem;
+    color: var(--color-primario);
+}
+
+.header-pagina-exito {
+    background-color: var(--color-secundario);
+}
+
+.contacto-grid-inicio div h2 {
+    color: var(--color-secundario);
+}
+
+.aviso-privacidad1 {
+    padding-top: 30px;
+}
+
+/* danza medicina */
+.cintilladanzamedicina {
+    background-color: rgba(0, 128, 0, 0.061);
+    position: relative;
+    padding: 50px 0px 50px 10px;
+}
+
+.cintilladanzamedicina p {
+    font-size: 2.3rem;
+    text-align: center;
+    font-style: italic;
+}
+
+  .pilares .icono-corazon{
+    color: var(--color-secundario);
+    font-size: 2rem;
+    margin-right: 5px;
+   
+}
+.contacto-grid-inicio div  p .icono-corazon{
+    color:var(--color-primario);
+    font-size: 2rem;
+}
+/*****************************************/
+
+/*mediaquery para pantalla de lap generica*/
+
+/*mediaquery para pantalla de lap generica*/
+
+/*mediaquery para pantalla de lap generica*/
+
+/*mediaquery para pantalla de lap generica*/
+
+/*mediaquery para pantalla de lap generica*/
+
+/*mediaquery para pantalla de lap generica*/
+
+/*mediaquery para pantalla de lap generica*/
+
+@media (min-width: 768px) {
+    .contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+    }
+
+    h2 {
+        font-size: 3.4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    h4 {
+        font-size: 2.6rem;
+    }
+
+    .header-home {
+        background-image: url(/img/nancy-header-index-min.png);
+    }
+
+    .boton-hamburguesa {
+        display: none;
+    }
+
+    /******/
+    .ham {
+        display: none;
+    }
+
+    .barra-nav {
+        padding: 0px;
+    }
+
+    .lista-navegacion {
+        display: none;
+    }
+
+    .menu-desktop {
+        display: inline-block;
+    }
+
+    .menu-desktop a {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        font-size: 1.6rem;
+    }
+
+    .menu-desktop a:hover {
+        color: var(--color-primario);
+    }
+
+    .boton-hamburguesa {
+        display: none;
+    }
+
+    /****/
+    .titulo-principal {
+        padding-top: 150px;
+        position: relative;
+        padding-left: 100px;
+    }
+
+    .titulo-principal h1 {
+        font-size: 5rem;
+    }
+
+
+    /**en ti**/
+    .enti-grid {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+
+    .enti-contenido ul li {
+        font-size: 2.5rem;
+    }
+
+    /***SERVICIOS****/
+    .contenedor-servicios {
+        max-width: 1000px;
+
+    }
+
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+
+
+
+    .con-incineso {
+        margin-top: 15px;
+    }
+
+    .video-servicios {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .video-container {
+        display: flex;
+    }
+
+    .testimonio-card {
+        display: grid;
+        grid-template-columns: repeat(2, 30% 70%);
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+
+    .servicios-contacto {
+        padding-top: 30px;
+    }
+
+    .acompanamiento {
+        margin-top: 150px;
+    }
+
+    form {
+        margin-top: 90px;
+    }
+
+    .tu-primera-cita {
+        margin-top: 100px;
+    }
+
+    /**Contacto**/
+    .contacto-grid-inicio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+
+        color: var(--color-secundario);
+    }
+
+    .danzamedicina-video {
+
+        margin-top: 10px;
+        width: 95%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+    }
+
+    .danzamedicina-video::after {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+
+    .frame-de-video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        position: 0;
+        top: 0;
+        left: 0;
+
+    }
+
+    /* Acercade header */
+
+
+}
+
+/*FIN _____mediaquery para pantalla de lap generica*/
+
+/**Mediaqueri para pantalla monitor grande****/
+
+@media (min-width: 1024px) {
+    .header-home {
+        background-image: url(/img/nancy-header-index-min.png);
+    }
+
+    p {
+        font-size: 2.5rem;
+        letter-spacing: .03rem;
+        line-height: 4rem;
+    }
+
+    .video-servicios {
+        width: 900px;
+    }
+
+    .grid-servicios-lista {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 5rem;
+    }
+
+    .tu-primera-cita-contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 5rem;
+        align-items: center;
+    }
+
+    .grid-contenedor-servicios-pagina {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 5rem;
+        align-items: center;
+    }
+
+    /* .servicios-contacto{
+        margin-top: 90px;
+    } */
+    .danzamedicina-video {
+
+        margin-top: 30px;
+        width: 95%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+    }
+
+    .danzamedicina-video::after {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+
+    .frame-de-video {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        position: 0;
+        top: 0;
+        left: 0;
+
+    }
+
+    /* .header-acercade-danzamedicina {
+        background-image: url(/img/danzamedicinaHeadergrande.jpg);
+    } */
+}
