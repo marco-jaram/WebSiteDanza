@@ -170,7 +170,7 @@ img {
 /**header acerca de**/
 
 .header-acercade-danzamedicina{
-    background-image: url(/img/danzamedicinaHeadergrande.jpg);
+    background-image: url(/img/Encabezado-Sesiones-Individuales-edicion-grande.jpg);
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
@@ -999,7 +999,32 @@ text-align: center;
 .jotform-form {
     padding: 30px ;
 }
+.blockquote p {
+    font-style: italic;
+    margin-bottom: 0;
+ }
+ 
+ blockquote p::before,
+ blockquote p::after {
+    content: "“";
+    font-family: Georgia;
+    font-size: 8rem;
+    margin: -2rem 0 0 -4rem;
+    position: absolute;
+    opacity: 0.5;
+ }
+ 
+ blockquote p::after {
+    content: "”";
+    margin: 0rem -4rem 0 0;
+ }
+ 
+ blockquote cite {
+    font-size: 1.6rem;
+ }
+ 
 
+      
 /*****************************************/
 
 /*mediaquery para pantalla de lap generica*/
