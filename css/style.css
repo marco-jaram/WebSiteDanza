@@ -75,14 +75,14 @@ a {
 
 p {
 
-  
+
     font-weight: 300;
     font-size: 2rem;
     letter-spacing: .03rem;
     line-height: 3.8rem;
     color: grey;
     font-family: var(--tipo-secundario);
-    
+
 }
 
 .corazon-icono {
@@ -169,7 +169,7 @@ img {
 
 /**header acerca de**/
 
-.header-acercade-danzamedicina{
+.header-sesiones-individuales {
     background-image: url(/img/Encabezado-Sesiones-Individuales-edicion-grande.jpg);
     background-position: center;
     background-attachment: scroll;
@@ -180,7 +180,7 @@ img {
     position: relative;
 }
 
-.header-acercade-danzamedicina::before {
+.header-sesiones-individuales::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -323,6 +323,7 @@ img {
     display: block;
     margin: 0 auto;
 }
+
 .separador-icono1.danzaT {
     width: 130px;
     display: block;
@@ -330,11 +331,13 @@ img {
     margin-top: 30px;
 
 }
+
 .separador-icono2 {
     width: 80px;
     display: block;
     margin: 0 auto;
 }
+
 .respira-titulo {
     padding-top: 20px;
     color: var(--color-primario);
@@ -396,11 +399,11 @@ img {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
-    
+
 }
 
-.servicios-parrafos{
-   padding-top: 0px;
+.servicios-parrafos {
+    padding-top: 0px;
 }
 
 /* blog */
@@ -414,7 +417,7 @@ img {
     text-align: center;
     color: var(--color-secundario);
     font-size: 4rem;
-   
+
 }
 
 .pilares h2 {
@@ -429,10 +432,12 @@ img {
     font-family: var(--tipo-secundario);
     font-weight: 300;
 }
-.pilares div ul li .corazon-icono{
+
+.pilares div ul li .corazon-icono {
     color: var(--color-primario);
 }
-.blog p{
+
+.blog p {
     letter-spacing: .03rem;
     line-height: 3.8rem;
     color: grey;
@@ -485,22 +490,27 @@ img {
     left: 0;
 
 }
-.img-sesion{
+
+.img-sesion {
     margin-top: 50px;
 }
-.titulo-como-trabajaremos{
+
+.titulo-como-trabajaremos {
     color: var(--color-primario);
     padding: 20px;
     text-align: center;
 }
+
 /**SERVICIOS***/
 
 .seccion-servicios-pagina-lista {
     margin-top: 30px;
 }
+
 .seccion-servicios-pagina-lista div .enfoque {
-font-weight: bold;
+    font-weight: bold;
 }
+
 .boton-agenda-tu-cita {
     text-align: center;
     padding: 15px;
@@ -528,9 +538,11 @@ font-weight: bold;
     font-weight: 300;
     font-size: 2.5rem;
 }
+
 .servicios-contenido p span {
     font-size: 1.5rem;
 }
+
 .subtitulo-servicios {
     text-align: center;
     color: grey;
@@ -548,18 +560,22 @@ font-weight: bold;
 }
 
 
-.minipresentacion-parrafos{
+.minipresentacion-parrafos {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
 }
-.mini-presentacion img{
-    display: flex; /* Convertir el div en un contenedor flex */
-    justify-content: center; /* Centrar horizontalmente la imagen */
+
+.mini-presentacion img {
+    display: flex;
+    /* Convertir el div en un contenedor flex */
+    justify-content: center;
+    /* Centrar horizontalmente la imagen */
     align-items: center;
     width: 300px;
-padding: 0px;
+    padding: 0px;
 }
+
 .contenedor-servicios h1 {
     text-align: center;
     color: var(--color-secundario);
@@ -581,7 +597,7 @@ padding: 0px;
     font-size: 2rem;
     display: inline-block;
     padding: 15px;
-   
+
     border-radius: 5px;
 }
 
@@ -593,51 +609,57 @@ padding: 0px;
 .video-container {
     display: flex;
 }
-.cuerpo-templo{
+
+.cuerpo-templo {
     margin-top: 50px;
     text-align: center;
 }
+
 .cuerpo-templo h3 {
     font-size: 2.5rem;
 }
 
 .contenedor-lilith-pagina {
     text-align: center;
-    
-  
+
+
 }
+
 .contenedor-lilith-pagina p {
-text-align: center;
+    text-align: center;
 }
+
 .contenedor-lilith-pagina .cita-lilith {
     color: var(--color-primario);
     background-color: rgba(0, 128, 0, 0.061);
     padding: 20px;
 }
 
-.cita-lilith-para-unirte{
-   color: white; 
+.cita-lilith-para-unirte {
+    color: white;
     background-color: rgba(150, 71, 28, 0.725);
     padding: 20px;
     margin-top: 20px;
- 
+
 }
+
 .lilith-pagina-icono {
     text-align: center;
     max-width: 300px;
 
 }
+
 .final-lilith .texto-final p {
-font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
-.final-lilith p .icono-corazon{
-    color:var(--color-primario);
+.final-lilith p .icono-corazon {
+    color: var(--color-primario);
     font-size: 2rem;
 }
 
-.final-lilith .texto-final p .icono-corazon{
-    color:var(--color-primario);
+.final-lilith .texto-final p .icono-corazon {
+    color: var(--color-primario);
     font-size: 2rem;
 }
 
@@ -664,27 +686,30 @@ font-size: 1.6rem;
     opacity: 0.4;
 }
 
-.contacto-grid-parrafo{
+.contacto-grid-parrafo {
     margin-top: -23px;
-    
+
 }
 
 /* fin */
-.contacto-grid-inicio{
+.contacto-grid-inicio {
     letter-spacing: .03rem;
     line-height: 3.8rem;
     color: grey;
     font-family: var(--tipo-secundario);
     font-weight: 300;
 }
-.contacto-grid-inicio p  span{
+
+.contacto-grid-inicio p span {
     color: var(--color-primario);
 }
-.cantacto-formulario  .contacto-grid-inicio div h2{
+
+.cantacto-formulario .contacto-grid-inicio div h2 {
     color: var(--color-primario);
 
 
 }
+
 .servicio-iconocontacto .servicos-icono {
     display: block;
     margin: 0 auto;
@@ -838,17 +863,19 @@ form textarea {
     font-size: 3rem;
 }
 
-.main-site-acerca-de .cursiva span{
+.main-site-acerca-de .cursiva span {
     font-style: italic;
-    
-   
+
+
 
 
 }
-.main-site-acerca-de .cintilladanzamedicina.aqui{
+
+.main-site-acerca-de .cintilladanzamedicina.aqui {
     background-color: #b46427b6;
     color: white;
 }
+
 .servicos-pagina-icono {
     width: 200px;
 }
@@ -858,12 +885,14 @@ form textarea {
 }
 
 .seccion-servicios-pagina-lista {
-    
+
     padding: 20px;
 }
-.seccion-servicios-pagina-lista div  ul .icono-corazon{
+
+.seccion-servicios-pagina-lista div ul .icono-corazon {
     color: var(--color-primario);
 }
+
 .lista-ul-pagina li {
     list-style: none;
     color: grey;
@@ -967,68 +996,81 @@ form textarea {
     font-style: italic;
 }
 
-  .pilares .icono-corazon{
+.pilares .icono-corazon {
     color: var(--color-primario);
     font-size: 2rem;
     margin-right: 5px;
-   
+
 }
-.contacto-grid-inicio div  p .icono-corazon{
-    color:var(--color-primario);
+
+.contacto-grid-inicio div p .icono-corazon {
+    color: var(--color-primario);
     font-size: 2rem;
 }
-.mini-presentacion{
-    
+
+.mini-presentacion {
+
     background-color: rgba(0, 128, 0, 0.063);
     position: relative;
     padding: 50px 0px 50px 10px;
 }
 
 
-.parrafos-iformativos p{
-margin-left: 20px;
+.parrafos-iformativos p {
+    margin-left: 20px;
 
 }
-.contenedor-lilith-pagina .primero{
+
+.contenedor-lilith-pagina .primero {
     margin-top: -50px;
 
 }
-.final-lilith p{
-text-align: center;
+
+.final-lilith p {
+    text-align: center;
 }
+
 .jotform-form {
-    padding: 30px ;
+    padding: 30px;
 }
+
 .blockquote p {
     font-style: italic;
     margin-bottom: 0;
- }
- 
- blockquote p::before,
- blockquote p::after {
+}
+
+blockquote p::before,
+blockquote p::after {
     content: "“";
     font-family: Georgia;
     font-size: 8rem;
     margin: -2rem 0 0 -4rem;
     position: absolute;
     opacity: 0.5;
- }
- 
- blockquote p::after {
+}
+
+blockquote p::after {
     content: "”";
     margin: 0rem -4rem 0 0;
- }
- 
- blockquote cite {
-    font-size: 1.6rem;
- }
- .titulos-sesiones-individuales{
+}
+
+blockquote .cita-sesiones {
+    font-size: 2.6rem;
+    color: #4d4b46;
+
+}
+
+.titulos-sesiones-individuales {
     color: var(--color-primario);
- }
+    padding-top: 30px;
+}
+
 .lista-sesiones-alquimia li {
     color: grey;
-    line-height:3rem;
+    line-height: 3.3rem;
+    font-size: 2.3rem;
 }
+
 .img-container {
     display: flex;
     justify-content: center;
@@ -1036,7 +1078,14 @@ text-align: center;
 
 .img-sesiones3 {
     max-width: 100%;
-}  
+}
+                                    
+.datos-sesiones-individuales p{
+margin: 0px;
+}
+.titulo-contenido-sesiones{
+    margin-bottom: -10px;
+}
 /*****************************************/
 
 /*mediaquery para pantalla de lap generica*/
@@ -1153,7 +1202,7 @@ text-align: center;
         column-gap: 2rem;
     }
 
-    
+
 
 
 
@@ -1191,8 +1240,8 @@ text-align: center;
 
     .tu-primera-cita {
         margin-top: 0px;
-            padding: 30px 0;
-       
+        padding: 30px 0;
+
     }
 
     /**Contacto**/
@@ -1233,8 +1282,8 @@ text-align: center;
         left: 0;
 
     }
-   
-    .mini-presentacion{
+
+    .mini-presentacion {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         -moz-column-gap: 2rem;
@@ -1243,9 +1292,10 @@ text-align: center;
         position: relative;
         padding: 50px 0px 50px 10px;
     }
+
     /* Acercade header */
     .jotform-form {
-        padding: 0px ;
+        padding: 0px;
     }
 
 }
@@ -1275,9 +1325,11 @@ text-align: center;
         -moz-column-gap: 2rem;
         column-gap: 5rem;
     }
-.texto-grid-servicios{
-    margin-top: 0px;
-}
+
+    .texto-grid-servicios {
+        margin-top: 0px;
+    }
+
     .tu-primera-cita-contenido {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -1325,9 +1377,11 @@ text-align: center;
         left: 0;
 
     }
+
     .jotform-form {
-        padding: 0px ;
+        padding: 0px;
     }
+
     /* .header-acercade-danzamedicina {
         background-image: url(/img/danzamedicinaHeadergrande.jpg);
     } */
