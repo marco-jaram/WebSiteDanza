@@ -1029,14 +1029,9 @@ text-align: center;
     color: grey;
     line-height:3rem;
 }
-.img-container {
-    display: flex;
-    justify-content: center;
-}
-
 .img-sesiones3 {
-    max-width: 100%;
-}  
+    text-align: center;
+}     
 /*****************************************/
 
 /*mediaquery para pantalla de lap generica*/
