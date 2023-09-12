@@ -1052,12 +1052,14 @@ blockquote p::after {
 blockquote p::after {
     content: "”";
     margin: 0rem -4rem 0 0;
+    max-width: 600px; 
 }
-
-blockquote .cita-sesiones {
-    font-size: 2.6rem;
-    color: #4d4b46;
-
+.cita-sesiones {
+    font-size: 24px; 
+    color: #383735b1;
+}
+.cintilladanzamedicina {
+    text-align: center;
 }
 
 .titulos-sesiones-individuales {
@@ -1085,6 +1087,9 @@ margin: 0px;
 }
 .titulo-contenido-sesiones{
     margin-bottom: -10px;
+}
+.datos-sesiones-individuales i{
+color: #b46327;
 }
 /*****************************************/
 
