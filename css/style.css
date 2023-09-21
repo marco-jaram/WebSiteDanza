@@ -1302,6 +1302,12 @@ color: #b46327;
     .jotform-form {
         padding: 0px;
     }
+    .contenido-sesiones{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -moz-column-gap: 2rem;
+        column-gap: 5rem;
+    }
 
 }
 
