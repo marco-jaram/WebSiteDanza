@@ -124,7 +124,7 @@ img {
     color: #b46327;
     margin-left: 10px;
 }
-
+/* debe pasar a  hero */
 .header-home {
     background-image: url(/img/Inicio-min.jpg);
     background-position: center;
@@ -144,7 +144,6 @@ img {
     position: absolute;
     opacity: 0.3;
 }
-
 /***header servicios**/
 
 .header-servicios {
@@ -1064,7 +1063,8 @@ blockquote p::after {
 
 .titulos-sesiones-individuales {
     color: var(--color-primario);
-    padding-top: 30px;
+    text-align: center;
+    
 }
 
 .lista-sesiones-alquimia li {
@@ -1091,6 +1091,31 @@ margin: 0px;
 .datos-sesiones-individuales i{
 color: #b46327;
 }
+.titulo-seccion-servicios{
+    text-align: center;
+    color: #658f3d;
+   
+    font-size: 4.5rem;
+}
+.contenido-sesiones {
+    display: flex;
+    flex-direction:column;  /* Cambia la dirección de flexión a columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilos para la imagen */
+.img-sesiones {
+    margin-bottom: 20px; /* Añade espacio entre la imagen y el texto si es necesario */
+}
+
+/* Estilos para el texto */
+.contenido-sesiones > div {
+    flex: 1; /* Permite que el texto ocupe todo el espacio vertical disponible */
+    
+}
+
+
 /*****************************************/
 
 /*mediaquery para pantalla de lap generica*/
@@ -1302,12 +1327,14 @@ color: #b46327;
     .jotform-form {
         padding: 0px;
     }
-    .contenido-sesiones{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        -moz-column-gap: 2rem;
-        column-gap: 5rem;
+    .contenido-sesiones {
+        display: flex;
+        flex-direction: row-reverse; /* Invierte el orden de los elementos */
+        align-items: center;
+        justify-content: center;
     }
+    
+  
 
 }
 
